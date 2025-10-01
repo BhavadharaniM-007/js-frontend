@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: Build Docker image
-        run: docker build -t yourdockerhubusername/js-frontend:latest .
+        run: docker build -t dharanimohan22/js-frontend:latest .
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
@@ -37,4 +37,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image
-        run: docker push BhavadharaniM-007/js-frontend:latest
+        run: docker push dharanimohan22/js-frontend:latest
